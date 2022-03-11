@@ -1,6 +1,8 @@
 .characterEditor {
   padding-top: 128px;
   padding-bottom: 64px;
+  position: relative;
+  /* isolation: isolate; */
 }
 
 .maxWidthWrapper {
@@ -8,6 +10,7 @@
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +27,31 @@
 }
 
 .characterWrapper {
+  width: 35%;
+  min-height: 500px;
+  position: fixed;
+  top: 128px;
+  right: 20px;
+  /* z-index: 2; */
+}
+
+.characterWrapper svg {
+  max-height: 80vh;
 }
 
 .controlColumn {
+  position: relative;
+  width: 50%;
+}
+
+.perspectiveBar {
+  height: 40%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: hsl(195deg, 20%, 86%);
+  /* z-index: -1; */
 }
